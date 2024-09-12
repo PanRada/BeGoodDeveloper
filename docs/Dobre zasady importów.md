@@ -16,7 +16,8 @@ Tworzenie relatywnych importów w Expo React Native polega na używaniu ścieże
 3. **Korzystaj z aliasów dla uproszczenia importów**:
 	 - Możesz skonfigurować aliasy w pliku `babel.config.js` za pomocą wtyczki `module-resolver`.
 	 - **Konfiguracja**:
-		 ```javascript
+		 
+    ```javascript
      module.exports = function(api) {
        api.cache(true);
        return {
@@ -36,8 +37,11 @@ Tworzenie relatywnych importów w Expo React Native polega na używaniu ścieże
        };
      };
      ```
+
 	 - **Użycie aliasów**:
-		 ```javascript
+
+
+	```javascript
      import MyComponent from '@components/MyComponent';
      import HomeScreen from '@screens/HomeScreen';
      ```
@@ -61,7 +65,7 @@ Tworzenie relatywnych importów w Expo React Native polega na używaniu ścieże
 8. **Używaj narzędzi do sprawdzania błędów w importach**:
 	 - Narzędzia takie jak ESLint z odpowiednimi wtyczkami mogą pomóc w wykrywaniu błędów w ścieżkach importów.
 	 - **Przykład konfiguracji ESLint**:
-		 ```json
+	```json
      {
        "plugins": ["import"],
        "rules": {
@@ -77,7 +81,7 @@ Tworzenie relatywnych importów w Expo React Native polega na używaniu ścieże
 9. **Rozważ użycie TypeScript dla lepszej intellisense**:
 	 - Jeśli korzystasz z TypeScript, możesz skonfigurować aliasy w pliku `tsconfig.json`, co ułatwi nawigację i importy.
 	 - **Przykład konfiguracji**:
-		 ```json
+	```json
      {
        "compilerOptions": {
          "baseUrl": "./",
