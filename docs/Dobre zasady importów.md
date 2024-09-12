@@ -4,7 +4,7 @@ Tworzenie relatywnych importów w Expo React Native polega na używaniu ścieże
 	 - `./` odnosi się do tego samego katalogu.
 	 - `../` przenosi o jeden katalog wyżej.
 	 - Przykład:
-		 ```javascript
+	```javascript
      import MyComponent from './MyComponent'; // Ten sam katalog
      import Header from '../components/Header'; // Katalog wyżej
      ```
